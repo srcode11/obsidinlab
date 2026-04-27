@@ -4,7 +4,7 @@
   
   const translations = {
     ar: {
-      heroTitle: 'ننجزها. بسرعة.',
+      heroTitle: 'ننجزها بسرعة.',
       heroSub: 'مشاريع، واجبات، تقارير، وعروض تقديمية تُنجز لك',
       heroBtn: 'اطلب عبر الواتساب',
       sectionTitle: 'الباقات',
