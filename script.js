@@ -13,7 +13,6 @@
       orderNow: 'اطلب الآن',
       startingFrom: 'يبدأ من',
       note: 'حسب المتطلبات',
-      // package names & descriptions
       p1_name: 'مهمة سريعة',
       p1_desc: 'إنجاز المهام الصغيرة بسرعة خلال 24 ساعة. بدون تعقيد.',
       p1_feat1: 'تسليم خلال 24 ساعة',
@@ -96,7 +95,6 @@
   const packages = [
     {
       id: 'quick-task',
-      icon: '⚡',
       nameKey: 'p1_name',
       descKey: 'p1_desc',
       featuresKeys: ['p1_feat1', 'p1_feat2'],
@@ -107,7 +105,6 @@
     },
     {
       id: 'report-fix',
-      icon: '📄',
       nameKey: 'p2_name',
       descKey: 'p2_desc',
       featuresKeys: ['p2_feat1', 'p2_feat2'],
@@ -118,7 +115,6 @@
     },
     {
       id: 'slides-pro',
-      icon: '📊',
       nameKey: 'p3_name',
       descKey: 'p3_desc',
       featuresKeys: ['p3_feat1', 'p3_feat2'],
@@ -129,7 +125,6 @@
     },
     {
       id: 'email-blast',
-      icon: '📧',
       nameKey: 'p4_name',
       descKey: 'p4_desc',
       featuresKeys: ['p4_feat1', 'p4_feat2'],
@@ -140,7 +135,6 @@
     },
     {
       id: 'portfolio',
-      icon: '💼',
       nameKey: 'p5_name',
       descKey: 'p5_desc',
       featuresKeys: ['p5_feat1', 'p5_feat2', 'p5_feat3'],
@@ -152,7 +146,6 @@
     },
     {
       id: 'graduation',
-      icon: '🎓',
       nameKey: 'p6_name',
       descKey: 'p6_desc',
       featuresKeys: ['p6_feat1', 'p6_feat2', 'p6_feat3', 'p6_feat4', 'p6_feat5'],
@@ -164,7 +157,6 @@
     },
     {
       id: 'report-presentation',
-      icon: '📝',
       nameKey: 'p7_name',
       descKey: 'p7_desc',
       featuresKeys: ['p7_feat1', 'p7_feat2'],
@@ -211,7 +203,6 @@
         : pkg.priceEn;
       
       card.innerHTML = `
-        <div class="package-icon">${pkg.icon}</div>
         <div class="package-name">${name}</div>
         <div class="package-desc">${desc}</div>
         <ul class="package-features">${featuresHTML}</ul>
@@ -251,11 +242,9 @@
       
       currentLang = lang;
       
-      // Update active button
       document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
       this.classList.add('active');
       
-      // Update HTML dir
       document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
       document.documentElement.setAttribute('lang', lang);
       
