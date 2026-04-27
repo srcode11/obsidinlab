@@ -98,7 +98,7 @@
       nameKey: 'p1_name',
       descKey: 'p1_desc',
       featuresKeys: ['p1_feat1', 'p1_feat2'],
-      price: '60',
+      price: '150',
       currency: 'ريال',
       priceEn: '$25',
       noteKey: 'note'
@@ -108,7 +108,7 @@
       nameKey: 'p2_name',
       descKey: 'p2_desc',
       featuresKeys: ['p2_feat1', 'p2_feat2'],
-      price: '120',
+      price: '200',
       currency: 'ريال',
       priceEn: '$40',
       noteKey: 'note'
@@ -118,7 +118,7 @@
       nameKey: 'p3_name',
       descKey: 'p3_desc',
       featuresKeys: ['p3_feat1', 'p3_feat2'],
-      price: '200',
+      price: '250',
       currency: 'ريال',
       priceEn: '$55',
       noteKey: 'note'
